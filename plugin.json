@@ -1,0 +1,5 @@
+{
+  "$schema": "https://antigravity.google/schemas/v1/plugin.json",
+  "name": "i-have-dyslexia",
+  "description": "Shape Antigravity output for a dyslexic reader: short sentences, one idea per line, a fixed reply skeleton, bold anchors, no walls of text."
+}

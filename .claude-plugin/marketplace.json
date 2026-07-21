@@ -1,0 +1,16 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "i-have-dyslexia",
+  "description": "Shape Claude Code output for a dyslexic reader. Short lines, fixed skeleton, no walls of text.",
+  "owner": {
+    "name": "Yongxiang Zhan"
+  },
+  "plugins": [
+    {
+      "name": "i-have-dyslexia",
+      "description": "Dyslexia-friendly output shaping for Claude Code.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}

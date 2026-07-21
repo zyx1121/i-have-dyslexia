@@ -1,0 +1,7 @@
+interface:
+  display_name: "I Have Dyslexia"
+  short_description: "Readable output for dyslexic readers"
+  default_prompt: "Use $i-have-dyslexia to make this response easy to decode: short lines, bold anchors, no walls of text."
+
+policy:
+  allow_implicit_invocation: true

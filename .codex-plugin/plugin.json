@@ -1,0 +1,37 @@
+{
+  "name": "i-have-dyslexia",
+  "version": "0.1.0",
+  "description": "Dyslexia-friendly output shaping for Codex: short sentences, fixed skeleton, bold anchors, no walls of text.",
+  "author": {
+    "name": "Yongxiang Zhan",
+    "url": "https://github.com/zyx1121"
+  },
+  "homepage": "https://github.com/zyx1121/i-have-dyslexia",
+  "repository": "https://github.com/zyx1121/i-have-dyslexia",
+  "license": "MIT",
+  "keywords": [
+    "dyslexia",
+    "accessibility",
+    "output-style",
+    "skills",
+    "codex"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "I Have Dyslexia",
+    "shortDescription": "Readable output for dyslexic readers",
+    "longDescription": "Shape Codex responses for a dyslexic reader by keeping sentences short, holding one idea per line, following a fixed reply skeleton, bolding anchor words, and never producing walls of text.",
+    "developerName": "Yongxiang Zhan",
+    "category": "Productivity",
+    "capabilities": [
+      "Instructions"
+    ],
+    "websiteURL": "https://github.com/zyx1121/i-have-dyslexia",
+    "defaultPrompt": [
+      "Use i-have-dyslexia for this task.",
+      "Make this answer easy to decode: short lines, bold anchors.",
+      "Review this response for dyslexia-friendly structure."
+    ],
+    "brandColor": "#D97706"
+  }
+}
