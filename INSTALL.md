@@ -37,13 +37,17 @@ Or keep it installed and turn it off: `claude plugin disable i-have-dyslexia`.
 
 ### Always-on (optional)
 
-Add to `~/.claude/CLAUDE.md`:
+Import the full skill into `~/.claude/CLAUDE.md`. Claude Code loads the file at the start of every session:
 
 ```markdown
 ## Output style
 
-Always follow the rules in the `i-have-dyslexia` skill: fixed skeleton, one sentence per bullet, sentences under 15 words, bold anchors, no walls of text.
+Follow these rules in every reply:
+
+@~/.claude/plugins/marketplaces/i-have-dyslexia/skills/i-have-dyslexia/SKILL.md
 ```
+
+The import reads the marketplace clone. Run `claude plugin marketplace update i-have-dyslexia` to get new rules.
 
 </details>
 

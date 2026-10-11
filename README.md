@@ -49,7 +49,7 @@ Dense text is hard to decode. Long lines lose the reader at each wrap, and a lay
 
 - **Fixed skeleton**: the answer on the first line and the next step on the last line, in every reply.
 - **Short lines**: one sentence for each bullet, each under 15 words.
-- **No walls**: no block taller than 3 lines.
+- **No walls**: paragraphs of 2 sentences, lists of 5 items.
 - **Bold anchors**: read only the bold words and you still get the main point.
 - **Off by default**: nothing changes until you call the skill.
 
@@ -73,18 +73,34 @@ Type `/i-have-dyslexia` in Claude Code or `$i-have-dyslexia` in Codex. The next 
 
 ## Usage
 
-The 10 rules come from how dyslexia changes reading. The full text is in [SKILL.md](skills/i-have-dyslexia/SKILL.md).
+The 18 rules come from how dyslexia changes reading. The full text is in [SKILL.md](skills/i-have-dyslexia/SKILL.md).
 
-1. Same skeleton in every reply.
-2. One sentence for each bullet.
-3. Sentences under 15 words.
-4. No block taller than 3 lines.
-5. Bold the anchors: numbers, file names, verdicts.
-6. A blank line between blocks.
-7. Plain words.
-8. No italics, no ALL CAPS.
-9. Digits, not number words.
-10. The key word first on each line.
+Content:
+
+1. Answer only what was asked.
+2. The conclusion first, then one reason.
+3. One name for one thing.
+4. Define a term the first time.
+
+Layout:
+
+5. Same skeleton in every reply.
+6. One sentence for each bullet.
+7. Sentences under 15 words (30 characters in Chinese, Japanese and Korean).
+8. Paragraphs of 2 sentences, lists of 5 items.
+9. Bold the anchors: numbers, file names, verdicts.
+10. A blank line between blocks.
+11. No italics, no ALL CAPS.
+12. Digits, not number words.
+13. The key word first on each line.
+
+Sentences (15 to 18 come from ASD-STE100):
+
+14. Plain words.
+15. Active voice.
+16. Verbs, not nouns.
+17. Instructions start with the verb.
+18. At most 3 nouns in a row.
 
 Say "stop dyslexia mode" to turn it off.
 
@@ -101,7 +117,7 @@ Say "stop dyslexia mode" to turn it off.
 
 Facts for coding agents and LLM tools. The rules for changing the code are in [AGENTS.md](AGENTS.md).
 
-- **Summary**: one agent skill that formats replies for readers with dyslexia: fixed skeleton, short sentences, bold anchors, no blocks over 3 lines.
+- **Summary**: one agent skill that formats replies for readers with dyslexia: fixed skeleton, short sentences, bold anchors, paragraphs of 2 sentences, lists of 5 items.
 - **Type**: plugin
 - **Interfaces**: skill `i-have-dyslexia` (`/i-have-dyslexia` in Claude Code, `$i-have-dyslexia` in Codex)
 - **Install**: `claude plugin marketplace add zyx1121/i-have-dyslexia && claude plugin install i-have-dyslexia@i-have-dyslexia`. Other hosts: [INSTALL.md](INSTALL.md).
