@@ -1,6 +1,6 @@
 {
   "name": "i-have-dyslexia",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Dyslexia-friendly output shaping for Codex: short sentences, fixed skeleton, bold anchors, no walls of text.",
   "author": {
     "name": "Yongxiang Zhan",

@@ -73,18 +73,34 @@ Type `/i-have-dyslexia` in Claude Code or `$i-have-dyslexia` in Codex. The next 
 
 ## Usage
 
-The 10 rules come from how dyslexia changes reading. The full text is in [SKILL.md](skills/i-have-dyslexia/SKILL.md).
+The 18 rules come from how dyslexia changes reading. The full text is in [SKILL.md](skills/i-have-dyslexia/SKILL.md).
 
-1. Same skeleton in every reply.
-2. One sentence for each bullet.
-3. Sentences under 15 words.
-4. No block taller than 3 lines.
-5. Bold the anchors: numbers, file names, verdicts.
-6. A blank line between blocks.
-7. Plain words.
-8. No italics, no ALL CAPS.
-9. Digits, not number words.
-10. The key word first on each line.
+Content:
+
+1. Answer only what was asked.
+2. The conclusion first, then one reason.
+3. One name for one thing.
+4. Define a term the first time.
+
+Layout:
+
+5. Same skeleton in every reply.
+6. One sentence for each bullet.
+7. Sentences under 15 words (30 characters in Chinese, Japanese and Korean).
+8. Paragraphs of 2 sentences, lists of 5 items.
+9. Bold the anchors: numbers, file names, verdicts.
+10. A blank line between blocks.
+11. No italics, no ALL CAPS.
+12. Digits, not number words.
+13. The key word first on each line.
+
+Sentences (from ASD-STE100):
+
+14. Plain words.
+15. Active voice.
+16. Verbs, not nouns.
+17. Instructions start with the verb.
+18. At most 3 nouns in a row.
 
 Say "stop dyslexia mode" to turn it off.
 
