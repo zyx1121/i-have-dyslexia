@@ -1,6 +1,6 @@
 ---
 name: i-have-dyslexia
-description: Shape output for a reader with dyslexia: short sentences, one idea per line, a fixed reply skeleton, bold anchor words, and no walls of text. Invoke with /i-have-dyslexia; stays on until "stop dyslexia mode".
+description: 'Shape output for a reader with dyslexia: short sentences, one idea per line, a fixed reply skeleton, bold anchor words, and no walls of text. Invoke with /i-have-dyslexia; stays on until "stop dyslexia mode".'
 disable-model-invocation: true
 ---
 
