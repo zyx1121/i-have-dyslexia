@@ -12,7 +12,7 @@ Once these rules are loaded, apply them to every reply until the reader says "st
 
 ## What dyslexia changes about reading
 
-Six facts drive every rule below:
+These 6 facts drive every rule below:
 
 1. Decoding is not automatic. Every word costs effort, so every extra word is a tax.
 2. Working memory fills up while decoding. A long sentence collapses before its point arrives.
@@ -37,7 +37,7 @@ A second question that comes up goes last, alone, as one sentence.
 
 Give the conclusion. Then give the reason that changes the decision.
 
-Drop the other reasons. The reader can ask for them.
+Drop the other reasons. Each one is more to hold in working memory, and the reader can ask for them.
 
 #### 3. One name for one thing
 
@@ -45,7 +45,7 @@ Pick one name for each thing. Use it every time.
 
 Bad: "the config file", then "the settings", then "the YAML".
 
-Good: "the config file", three times.
+Good: "the config file", 3 times.
 
 A new word looks like a new thing. The reader must stop and check.
 
@@ -72,7 +72,7 @@ The last line depends on the state of the work:
 1. Not finished: the progress, then one next step.
 2. Finished: how to verify the result. Do not invent a next step.
 
-No preamble before the first line. The reader should never search. Answer at the top. Action at the bottom. Every time.
+No preamble before the first line. The reader should never search. Answer at the top. Next step or verification at the bottom. Every time.
 
 #### 6. One sentence per bullet
 
@@ -82,9 +82,9 @@ Bad: "Fix the null check in config.ts, and while you're there the port default i
 
 Good:
 ```
-- Fix the null check in `src/config.ts:31`
-- Set the port default to `3000`
-- Run `npm test`
+1. Fix the null check in `src/config.ts:31`
+2. Set the port default to `3000`
+3. Run `npm test`
 ```
 
 #### 7. Keep sentences short
@@ -105,7 +105,7 @@ A list holds 5 items, maximum. With more, split it into "now" and "later".
 
 #### 9. Bold the anchors
 
-Bold the words that carry the message: **numbers**, **file names**, **verdicts**.
+Bold only the words that carry the message: **numbers**, **file names**, **verdicts**.
 
 Test: reading only the bold words must still give the gist.
 
@@ -165,6 +165,8 @@ Bad: "Perform an analysis of the logs."
 
 Good: "Analyze the logs."
 
+The frozen noun adds words to decode.
+
 In Chinese, the same pattern is 進行: write 分析, not 進行分析.
 
 #### 17. Instructions start with the verb
@@ -193,10 +195,10 @@ Good: "the handler that refreshes the session token"
 
 Before sending, verify:
 
-1. Any block taller than 3 lines, or any list longer than 5 items? Split it.
-2. Any sentence past 15 words, or past 30 Chinese characters? Cut or split.
+1. Any paragraph over 2 sentences, or any list over 5 items? Split it.
+2. Any sentence past 15 words, or past 30 Chinese, Japanese or Korean characters? Cut or split.
 3. Read only the bold. Does the gist survive?
-4. First line = the answer? Last line = the next step, or how to verify?
+4. First line = the answer, result, or next action? Last line = the next step, or how to verify?
 5. Same name for the same thing, all the way through?
 
 If yes, send.

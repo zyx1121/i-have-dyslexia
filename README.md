@@ -49,7 +49,7 @@ Dense text is hard to decode. Long lines lose the reader at each wrap, and a lay
 
 - **Fixed skeleton**: the answer on the first line and the next step on the last line, in every reply.
 - **Short lines**: one sentence for each bullet, each under 15 words.
-- **No walls**: no block taller than 3 lines.
+- **No walls**: paragraphs of 2 sentences, lists of 5 items.
 - **Bold anchors**: read only the bold words and you still get the main point.
 - **Off by default**: nothing changes until you call the skill.
 
@@ -94,7 +94,7 @@ Layout:
 12. Digits, not number words.
 13. The key word first on each line.
 
-Sentences (from ASD-STE100):
+Sentences (15 to 18 come from ASD-STE100):
 
 14. Plain words.
 15. Active voice.
@@ -117,7 +117,7 @@ Say "stop dyslexia mode" to turn it off.
 
 Facts for coding agents and LLM tools. The rules for changing the code are in [AGENTS.md](AGENTS.md).
 
-- **Summary**: one agent skill that formats replies for readers with dyslexia: fixed skeleton, short sentences, bold anchors, no blocks over 3 lines.
+- **Summary**: one agent skill that formats replies for readers with dyslexia: fixed skeleton, short sentences, bold anchors, paragraphs of 2 sentences, lists of 5 items.
 - **Type**: plugin
 - **Interfaces**: skill `i-have-dyslexia` (`/i-have-dyslexia` in Claude Code, `$i-have-dyslexia` in Codex)
 - **Install**: `claude plugin marketplace add zyx1121/i-have-dyslexia && claude plugin install i-have-dyslexia@i-have-dyslexia`. Other hosts: [INSTALL.md](INSTALL.md).
