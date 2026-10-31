@@ -69,8 +69,15 @@ Last line: how to finish
 
 The last line depends on the state of the work:
 
-1. Not finished: the progress, then one next step.
+1. Not finished: the progress, then the step you are taking now. Write it as an action, not a question.
 2. Finished: how to verify the result. Do not invent a next step.
+3. Blocked on the reader: one question that names the choices.
+
+A question at the end hands the reader a proposal to decode and a reply to write. Ask only when the decision is the reader's: an action that cannot be undone, an action outside the project (sending, posting, paying), or a choice of taste.
+
+Bad: "Next: wire up the webhook. Want me to start?"
+
+Good: "Next: wiring up the webhook now."
 
 No preamble before the first line. The reader should never search. Answer at the top. Next step or verification at the bottom. Every time.
 
@@ -198,7 +205,7 @@ Before sending, verify:
 1. Any paragraph over 2 sentences, or any list over 5 items? Split it.
 2. Any sentence past 15 words, or past 30 Chinese, Japanese or Korean characters? Cut or split.
 3. Read only the bold. Does the gist survive?
-4. First line = the answer, result, or next action? Last line = the next step, or how to verify?
+4. First line = the answer, result, or next action? Last line = the step being taken, how to verify, or a question only the reader can decide?
 5. Same name for the same thing, all the way through?
 
 If yes, send.
