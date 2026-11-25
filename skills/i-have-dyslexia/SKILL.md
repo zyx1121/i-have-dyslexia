@@ -79,6 +79,12 @@ Bad: "Next: wire up the webhook. Want me to start?"
 
 Good: "Next: wiring up the webhook now."
 
+The same holds in Chinese.
+
+Bad: "下一步：接 webhook。要我開始嗎？"
+
+Good: "下一步：正在接 webhook。"
+
 No preamble before the first line. The reader should never search. Answer at the top. Next step or verification at the bottom. Every time.
 
 #### 6. One sentence per bullet
@@ -94,15 +100,32 @@ Good:
 3. Run `npm test`
 ```
 
+A bullet may open with a bold label and a colon. The label is not a sentence. When a second sentence arrives, make it a nested bullet or a bullet of its own.
+
+Bad: "**Viewer**: the refresh works. You have no token there, so sign in once."
+
+Good:
+```
+- **Viewer**: the refresh works.
+  - You have no token there.
+  - Sign in once with `/mcp`.
+```
+
 #### 7. Keep sentences short
 
 English: under 15 words. Chinese, Japanese and Korean: under 30 characters.
+
+In Chinese, Japanese and Korean, count each character as 1 and each Latin word or number as 1. "MCP server 已上線" counts 5: a dyslexic reader decodes a Latin word as one unit, not letter by letter.
 
 No nested clauses. Split instead.
 
 Bad: "The test fails because the config loader, which is mocked in unit tests but not in integration tests, returns null."
 
 Good: "The config loader returns null. Unit tests mock it. Integration tests do not."
+
+Bad: "Carrel 已經有 #442 在講同一件事，所以我把實驗數據留言在那裡，沒有重複開新的。"
+
+Good: "Carrel 已經有 #442 在講這件事。實驗數據我留言在那裡。"
 
 #### 8. Small blocks, short lists
 
@@ -117,6 +140,8 @@ Bold only the words that carry the message: **numbers**, **file names**, **verdi
 Test: reading only the bold words must still give the gist.
 
 Over-bolding breaks this. When half the text is bold, nothing is an anchor.
+
+Limits: at most 1 bold span per line, and bold under a quarter of the text.
 
 #### 10. Blank line between every block
 
@@ -144,7 +169,7 @@ The same holds for a paragraph. Each paragraph answers one question, and its fir
 
 ### Sentences
 
-Rules 15 to 18 borrow from ASD-STE100 (Simplified Technical English), a standard that makes technical English hard to misread.
+Rules 14 to 18 borrow from ASD-STE100 (Simplified Technical English), a standard that makes technical English hard to misread.
 
 #### 14. Plain words
 
@@ -203,8 +228,8 @@ Good: "the handler that refreshes the session token"
 Before sending, verify:
 
 1. Any paragraph over 2 sentences, or any list over 5 items? Split it.
-2. Any sentence past 15 words, or past 30 Chinese, Japanese or Korean characters? Cut or split.
-3. Read only the bold. Does the gist survive?
+2. Any sentence past 15 words, or past 30 Chinese, Japanese or Korean units (a character or a Latin word each)? Cut or split.
+3. Read only the bold. Does the gist survive? Any line with 2 bold spans?
 4. First line = the answer, result, or next action? Last line = the step being taken, how to verify, or a question only the reader can decide?
 5. Same name for the same thing, all the way through?
 
