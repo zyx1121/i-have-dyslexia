@@ -16,4 +16,6 @@ One agent skill, `skills/i-have-dyslexia/SKILL.md`, that formats replies for rea
 claude plugin validate .
 ```
 
+`node scripts/check.mjs <transcript.jsonl>...` counts, per rule, how many past replies break the rules a script can judge (sentence length, one sentence per bullet, list and paragraph size, bold share, italics, number words). Run it on the same transcripts before and after a rule change.
+
 Then install the plugin from a local path, type `/i-have-dyslexia` and read the next reply. It must follow the skeleton.
